@@ -3,9 +3,15 @@ const replacePath = require('./utils')
 const path = require("path")
 
 module.exports = exports.createPages = ({ actions, graphql }) => {
-  const { createPage } = actions
+  const { createPage, createRedirect } = actions
 
   const postTemplate = path.resolve(`src/templates/postTemplate.js`)
+  createRedirect({
+    fromPath: '/articles',
+    toPath: '/docs/get-started/introduction',
+    isPermanent: true,
+    redirectInBrowser:true
+  })
 
   return graphql(`
     {

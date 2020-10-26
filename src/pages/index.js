@@ -21,14 +21,24 @@ const IndexPage = () => {
           </p>
           <h2>Boilerplate for markdown-based website</h2>
           <br />
-          <Link to="/docs/get-started/introduction">
+          <Link to="/articles">
             <Button
               type="primary"
               size="large"
               icon="right-circle"
               style={{ marginRight: 10 }}
             >
-              Get Started
+              Redirect Test2 (Get Started)
+            </Button>
+          </Link>
+          <Link to="/articles/abc/xyz">
+            <Button
+              type="primary"
+              size="large"
+              icon="right-circle"
+              style={{ marginRight: 10 }}
+            >
+              Redirect Test2
             </Button>
           </Link>
           <Button
